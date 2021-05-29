@@ -8,7 +8,7 @@ var imagens_para_banner = [
 
 var tam_imagens_para_banner = imagens_para_banner.length;
 
-var i =0;
+var i =1;
 
 document.addEventListener("DOMContentLoaded", function(event) {
 
@@ -18,19 +18,33 @@ document.addEventListener("DOMContentLoaded", function(event) {
        
         if(i<=tam_imagens_para_banner-1)      
          {
-            $("#banner").fadeOut();
-            $("#banner").attr("src", "http://www.instagram.com" + imagens_para_banner[i]);
-            $("#banner").fadeIn();
-            i++;
+           Rodar_banner();
          }
          else   
-           i=0;
+         { 
+            i=0;
+
+           Rodar_banner();
+
+         }  
+        
            
            
-    }, 2000)
+    }, 3000)
 
 
 
 });
 
 
+function Rodar_banner(){
+            
+            $("#banner").fadeOut();
+            $("#banner").fadeIn();
+            $("#banner").attr("src", "http://www.instagram.com" + imagens_para_banner[i]);
+           
+            i++;
+}
+
+//<img src="https://www.instagram.com/static/images/homepage/home-phones.png/43cc71bb1b43.png"/>
+            
