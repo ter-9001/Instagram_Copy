@@ -9,6 +9,8 @@ var imagens_para_banner = [
 var tam_imagens_para_banner = imagens_para_banner.length;
 
 var i =1;
+var textodasenha;
+var textodousuario;
 
 document.addEventListener("DOMContentLoaded", function(event) {
 
@@ -34,6 +36,19 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 
 
+    $("#senha").keyup( function(){
+       
+       Ativar_Botão()
+    })
+
+    $("#usuario").keyup( function(){
+       
+      Ativar_Botão()
+    })
+
+
+
+
 });
 
 
@@ -49,6 +64,21 @@ function Rodar_banner(){
            
             
             i++;
+}
+
+
+
+function Ativar_Botão(){
+    
+    textodasenha = $("#senha").val()
+    textodousuario= $("#usuario").val()
+
+
+    if( (textodasenha.length >= 5) && (textodousuario.length))
+        $("#btn-insta").css("background","#007bff")
+    else
+        $("#btn-insta").css("background","rgb(0, 146, 246, 0.3)")    
+
 }
 
 //<img src="https://www.instagram.com/static/images/homepage/home-phones.png/43cc71bb1b43.png"/>

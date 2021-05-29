@@ -15,3 +15,15 @@ p{
 }
 
 
+#btn-insta:hover {
+
+   background: #007bff;
+   
+
+}
+
+#btn-insta{
+    background-color: rgb(0, 146, 246, 0.3);
+    border: none;
+}
+
