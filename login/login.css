@@ -1,0 +1,17 @@
+button, input{
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    border: none;
+}
+
+p{
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+}
+
+.border-login{
+    border-style: groove;
+    border-color: rgba(255, 254, 254, 0.467);
+}
+
+
