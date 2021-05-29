@@ -39,10 +39,15 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 function Rodar_banner(){
             
-            $("#banner").fadeOut();
-            $("#banner").fadeIn();
-            $("#banner").attr("src", "http://www.instagram.com" + imagens_para_banner[i]);
+            //$("#banner").fadeOut("slow");
+
+
+            //$("#banner").attr("visibility", 'visible').attr("display","block")
+            
+            $("#banner").fadeOut("fast").attr("src", "http://www.instagram.com" + imagens_para_banner[i]);
+            $("#banner").fadeIn("slow")
            
+            
             i++;
 }
 
